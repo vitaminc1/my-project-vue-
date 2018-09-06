@@ -28,7 +28,7 @@ const bytesToSize = (bytes, n = 2) => {
  * @return {String} 处理完的字符串
  * */
 const textClip = (str, length = 250, flag = '...') => {
-  return str.slice(0, length) + (str.length > length ? flag : '')
+  return str ? str.slice(0, length) + (str.length > length ? flag : '') : ""
 }
 
 /**
